@@ -93,7 +93,7 @@ async def get_text_messages(msg: types.Message):
         command, template, *args = callback_query.data.split()
 
         if template in meme.TEMPLATES.keys():
-            await bot.send_photo(msg.from_user.id, photo=meme.generate(template, args),
+            await bot.send_photo(msg.from_user.id, photo=meme.generate(template, *args),
                                  caption=f'Meme {template}')
 
 
