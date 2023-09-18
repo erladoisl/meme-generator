@@ -20,7 +20,7 @@ log.setLevel(c.LOGGER_CONFIG['level'])
 TO_GENERATE_MEME_INFO = 'To generate meme run /generate template_name first_phrase second_phrase and so on\n' + \
     "To see all available template's names run /templates\n" + \
     'first_phrase second_phrase - any string that you want to add to your meme\n' + \
-    'Pleace, use "-" symbol instead of space'
+    'Pleace, use "_" symbol instead of space'
 
 bot = Bot(token=c.TOKEN)
 dp = Dispatcher(bot)
