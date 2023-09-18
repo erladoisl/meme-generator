@@ -40,7 +40,7 @@ async def help(msg: types.Message):
     params = ['I_love_you']
     await msg.answer(f'For example, your command:\n/generate {template_name} {" ".join(params)}')
     await msg.answer('Few seconds to wait...')
-    await bot.send_photo(msg.from_user.id, photo=meme.generate(template_name, params),
+    await bot.send_photo(msg.from_user.id, photo=meme.generate(template_name, *params),
                          caption=f'Meme {template_name} {" ".join(params)}')
     await msg.answer(f'As you can see, we got meme by template named {template_name} with one phrase: {" and ".join(params)}')
 
