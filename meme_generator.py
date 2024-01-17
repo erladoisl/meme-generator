@@ -1,4 +1,4 @@
-import MemePy
+from MemePy import MemePy
 from typing import Dict, Any
 import json
 import io
